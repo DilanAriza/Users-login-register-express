@@ -69,24 +69,15 @@ _Este comando hace referencia a la ejecucion del servidor con la dependencia de 
 
 
 
-_Para obtener los datos de el servidor abriremos postman y ejecutaremos la siguiente peicion:_
+_Para obtener los datos de el servidor abriremos postman y ejecutaremos la siguiente peicion con el metodo POST y pasandole los parametros de "email", "name" y "password":_
 
 ![En Postman](examples/imgs/CreateUserAndGetJWT.png)
-![En el navegador](examples/imgs/GetAllTasksBrowser.png)
 
-_Para poder crear una nueva tarea ejecuta la siguiente peticicion con el metodo "POST"_
-![En Postman](examples/imgs/CreateATask.png)
+_Para verificar los usuaios ya creados accedemos a la url siguiente con el metodo GET_
+![En Postman](examples/imgs/GetAllUsers.png)
 
-_Para buscar una tarea en cuestion gracias a su ID hacemos una peticion POST a la siguiente ruta_
-![En Postman](examples/imgs/GetATask.png)
-![En el navegador](examples/imgs/GetATaskBrowser.png)
-
-_Para Actualizar una tarea enviamos una peticion con el ID como parametro de consulta y on el metodo PUT y los parametros que vamos a actualizar en el cuerpo de la peticion_
-![En Postman](examples/imgs/UpdateATask.png)
-
-
-_Y finalmente para Eliminar una tarea enviamos una peticion con el ID como parametro de consulta y on el metodo DELETE_
-![En Postman](examples/imgs/DeleteATask.png)
+_Para verificar tu session haciendo login accedemos a la ruta inicial con un metodo POST pasandole como parametro en las cabezeras `Authorization` con el parametro `Bearer` espacio y el JWT `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZjI1N2JlNDlmMTFjM2E4YzViMjAzMSIsImlhdCI6MTU5Mjk0MDQ3OX0.aStB_UUYy8mInAAuniy8l3miQQQnIEBenQz77g8x3Ro`_
+![En Postman](examples/imgs/Login.png)
 
 
 ## Despliegue 📦
