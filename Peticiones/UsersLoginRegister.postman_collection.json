@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "bc09d60b-a24d-4e16-8e1b-7a15ea9d6d0d",
+		"name": "UsersLoginRegister",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\"     : \"dilan@ariza.com\",\r\n    \"name\"      : \"Dilan Santiago Ariza Cañon\",\r\n    \"password\"  : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUsersInformation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/users/get",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginProvited",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZjI1N2JlNDlmMTFjM2E4YzViMjAzMSIsImlhdCI6MTU5Mjk0MDQ3OX0.aStB_UUYy8mInAAuniy8l3miQQQnIEBenQz77g8x3Ro",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
